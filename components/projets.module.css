@@ -1,0 +1,154 @@
+.projets {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Kanji décoratif */
+.projets::before {
+  content: "技"; /* 技 = technique/artisanat */
+  position: absolute;
+  font-size: 20rem;
+  color: rgba(117, 0, 0, 0.03);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.titre {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #750000;
+  font-weight: bold;
+  font-family: 'Noto Serif JP', serif;
+}
+
+/* Liste des projets */
+.liste-projets {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Carte projet */
+.projet {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fdf8f4;
+  border-left: 6px solid #750000;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease;
+  animation: entree-japonaise 0.8s ease-out both;
+}
+
+.projet:hover {
+  transform: translateY(-5px);
+}
+
+.projet-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: #1f1a17;
+  font-weight: bold;
+}
+
+.projet-info p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* Image dans la carte */
+.projet img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Bouton voir le projet */
+.btn-voir {
+  align-self: start;
+  background-color: #750000;
+  color: white;
+  font-family: 'Noto Serif JP', serif;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-voir:hover {
+  background-color: #a30000;
+  transform: translateY(-2px);
+}
+
+/* Bouton supprimer */
+.btn-supprimer {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #d11a2a;
+  transition: transform 0.2s;
+}
+
+.btn-supprimer:hover {
+  transform: scale(1.2);
+}
+@keyframes entree-japonaise {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.projet:nth-child(1) {
+  animation-delay: 0s;
+}
+.projet:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.projet:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.boutonRetourContainer {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.boutonRetour {
+  margin-left: 0;
+  background-color: #a30000;
+  color: white;
+  font-family: 'Noto Serif JP', serif;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boutonRetour:hover {
+  background-color: #750101;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,104 @@
+.contact {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-top: 4px solid #7c030383;
+}
+
+.contactTitle {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* 🎯 Formulaire page /contact */
+.formContainer {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #003366;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.input,
+.textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111;
+  background-color: white;
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  background-color: #700202d5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.confirmation {
+  color: rgba(128, 0, 0, 0.534);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.returnContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.returnButton {
+  background-color: #a30000;
+  color: white;
+  font-family: 'Noto Serif JP', serif;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.returnButton:hover {
+  background-color: #750101;
+  transform: translateY(-2px);
+}
+
+.label {
+  font-weight: bold;
+  color: #750000; /* rouge foncé japonais */
+}

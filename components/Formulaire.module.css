@@ -1,0 +1,52 @@
+.formulaire {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.champ {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #003366; /* ✅ bleu foncé lisible */
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #111; /* ✅ texte noir/gris foncé */
+  background-color: white;
+}
+
+
+.button {
+  display: block;
+  margin: auto;
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

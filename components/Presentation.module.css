@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'ChunkFive';
+  src: url('/fonts/ChunkFive-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.presentation {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  /* Ajout du fond crème clair + image + dégradé */
+  background-color: #f9f3e9; /* crème doux en arrière-plan */
+  background-image: 
+    linear-gradient(to bottom, rgba(49, 22, 18, 0.6), rgba(49, 22, 18, 0.9)),
+    url('/japon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Nouveau cadre façon panneau japonais */
+  border: 16px solid #e0d6c6;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+
+  color: white;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 6rem 4rem;
+  background-color: rgba(0, 0, 0, 0.4); /* plus lisible */
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 4rem;
+  color: #f8f1ea;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  font-family: 'ChunkFive', serif;
+  margin-top: 1rem;
+  color: #ffece2;
+}
